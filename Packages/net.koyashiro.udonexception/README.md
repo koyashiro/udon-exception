@@ -31,10 +31,3 @@ public class UdonExceptionSample : UdonSharpBehaviour
 ```
 
 ![image](https://user-images.githubusercontent.com/6698252/202893561-c7e73f6b-056a-4c61-9cca-a3e7cdd993dc.png)
-
-## Supported exceptions
-
-- [System.Exception](https://learn.microsoft.com/en-us/dotnet/api/system.exception)
-- [System.ArgumentException](https://learn.microsoft.com/en-us/dotnet/api/system.argumentexception)
-- [System.ArgumentNullException](https://learn.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
-- [System.ArgumentOutOfRangeException](https://learn.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)

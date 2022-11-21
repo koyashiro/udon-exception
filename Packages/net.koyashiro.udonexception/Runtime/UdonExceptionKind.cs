@@ -5,6 +5,11 @@ namespace Koyashiro.UdonException
         Exception,
         ArgumentException,
         ArgumentNullException,
-        ArgumentOutOfRangeException
+        ArgumentOutOfRangeException,
+        IndexOutOfRangeException,
+        InvalidOperationException,
+        KeyNotFoundException,
+        NotImplementedException,
+        NotSupportedException
     }
 }

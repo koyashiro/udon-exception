@@ -38,3 +38,8 @@ public class UdonExceptionSample : UdonSharpBehaviour
 - [System.ArgumentException](https://learn.microsoft.com/en-us/dotnet/api/system.argumentexception)
 - [System.ArgumentNullException](https://learn.microsoft.com/en-us/dotnet/api/system.argumentnullexception)
 - [System.ArgumentOutOfRangeException](https://learn.microsoft.com/en-us/dotnet/api/system.argumentoutofrangeexception)
+- [System.IndexOutOfRangeException](https://learn.microsoft.com/en-us/dotnet/api/system.indexoutofrangeexception)
+- [System.InvalidOperationException](https://learn.microsoft.com/ja-jp/dotnet/api/system.invalidoperationexception)
+- [System.KeyNotFoundException](https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.keynotfoundexception)
+- [System.NotImplementedException](https://learn.microsoft.com/ja-jp/dotnet/api/system.notimplementedexception)
+- [System.NotSupportedException](https://learn.microsoft.com/ja-jp/dotnet/api/system.notsupportedexception)

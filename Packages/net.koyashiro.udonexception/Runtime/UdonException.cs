@@ -99,6 +99,81 @@ namespace Koyashiro.UdonException
             Panic();
         }
 
+        public static void ThrowIndexOutOfRangeException()
+        {
+            var kind = UdonExceptionKind.IndexOutOfRangeException;
+            var message = GetDefaultExceptionMessage(kind);
+            LogErrorMessage(kind, message);
+            Panic();
+        }
+
+        public static void ThrowIndexOutOfRangeException(string message)
+        {
+            var kind = UdonExceptionKind.IndexOutOfRangeException;
+            LogErrorMessage(kind, message);
+            Panic();
+        }
+
+        public static void ThrowInvalidOperationException()
+        {
+            var kind = UdonExceptionKind.InvalidOperationException;
+            var message = GetDefaultExceptionMessage(kind);
+            LogErrorMessage(kind, message);
+            Panic();
+        }
+
+        public static void ThrowInvalidOperationException(string message)
+        {
+            var kind = UdonExceptionKind.InvalidOperationException;
+            LogErrorMessage(kind, message);
+            Panic();
+        }
+
+        public static void ThrowKeyNotFoundException()
+        {
+            var kind = UdonExceptionKind.KeyNotFoundException;
+            var message = GetDefaultExceptionMessage(kind);
+            LogErrorMessage(kind, message);
+            Panic();
+        }
+
+        public static void ThrowKeyNotFoundException(string message)
+        {
+            var kind = UdonExceptionKind.KeyNotFoundException;
+            LogErrorMessage(kind, message);
+            Panic();
+        }
+
+        public static void ThrowNotImplementedException()
+        {
+            var kind = UdonExceptionKind.NotImplementedException;
+            var message = GetDefaultExceptionMessage(kind);
+            LogErrorMessage(kind, message);
+            Panic();
+        }
+
+        public static void ThrowNotImplementedException(string message)
+        {
+            var kind = UdonExceptionKind.NotImplementedException;
+            LogErrorMessage(kind, message);
+            Panic();
+        }
+
+        public static void ThrowNotSupportedException()
+        {
+            var kind = UdonExceptionKind.NotSupportedException;
+            var message = GetDefaultExceptionMessage(kind);
+            LogErrorMessage(kind, message);
+            Panic();
+        }
+
+        public static void ThrowNotSupportedException(string message)
+        {
+            var kind = UdonExceptionKind.NotSupportedException;
+            LogErrorMessage(kind, message);
+            Panic();
+        }
+
         private static string GetExceptionString(UdonExceptionKind kind)
         {
 
@@ -112,6 +187,16 @@ namespace Koyashiro.UdonException
                     return "System.ArgumentNullException";
                 case UdonExceptionKind.ArgumentOutOfRangeException:
                     return "System.ArgumentOutOfRangeException";
+                case UdonExceptionKind.IndexOutOfRangeException:
+                    return "System.IndexOutOfRangeException";
+                case UdonExceptionKind.InvalidOperationException:
+                    return "System.InvalidOperationException";
+                case UdonExceptionKind.KeyNotFoundException:
+                    return "System.KeyNotFoundException";
+                case UdonExceptionKind.NotImplementedException:
+                    return "System.NotImplementedException";
+                case UdonExceptionKind.NotSupportedException:
+                    return "System.NotSupportedException";
                 default:
                     return default;
             }
@@ -129,6 +214,16 @@ namespace Koyashiro.UdonException
                     return "Value cannot be null.";
                 case UdonExceptionKind.ArgumentOutOfRangeException:
                     return "Specified argument was out of the range of valid values.";
+                case UdonExceptionKind.IndexOutOfRangeException:
+                    return "Index was outside the bounds of the array.";
+                case UdonExceptionKind.InvalidOperationException:
+                    return "Operation is not valid due to the current state of the object.";
+                case UdonExceptionKind.KeyNotFoundException:
+                    return "The given key was not present in the dictionary.";
+                case UdonExceptionKind.NotImplementedException:
+                    return "The method or operation is not implemented.";
+                case UdonExceptionKind.NotSupportedException:
+                    return "Specified method is not supported.";
                 default:
                     return default;
             }
